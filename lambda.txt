@@ -1,0 +1,15 @@
+MyInterface myInterface_1 = new MyInterface() {
+            @Override
+            public Integer singleMethod(String value) {
+                return Integer.parseInt(value);
+            }
+};
+
+MyInterface myInterface_1 =
+            (value) ->
+                Integer.parseInt(value);
+
+interface MyInterface {
+
+    Integer singleMethod(String value);
+}
